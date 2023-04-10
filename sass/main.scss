@@ -21,5 +21,6 @@
     @include m.response(phone){
         display: flex;
         flex-direction: column;
+        flex:1;
     }
 }
