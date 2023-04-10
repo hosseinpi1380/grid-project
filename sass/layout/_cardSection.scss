@@ -1,0 +1,48 @@
+.card {
+    box-shadow: 0 .2rem .5rem rgba(black, .3);
+    &-boxes {
+        
+        grid-area: 2/3/3/12;
+        display: grid;
+        margin: 15rem 0;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 30rem));
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 5rem;
+        justify-content: center;
+    }
+
+    background-color: #ffff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    justify-content: space-evenly;
+    flex-direction: column;
+    // box-sizing: content-box;
+
+    &__heading {
+        font-size: 1.8rem;
+        font-weight: 200;
+        text-transform: uppercase;
+        padding-bottom: 1rem;
+    }
+
+    &__paragraph {
+        color: #6D5D4B;
+        // background-color: gray;
+        
+        font-size: 1.5rem;
+        letter-spacing: .5px;
+        font-weight: 100;
+        font-family: 'Nunito', sans-serif;
+    }
+
+
+}
+
+.svg-icon {
+    height: 5rem;
+    width: 5rem;
+    fill: $color-primary;
+    margin-bottom: 1rem;
+}

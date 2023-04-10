@@ -1,0 +1,30 @@
+@mixin flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin response($break) {
+    @if ($break==phone) {
+        @media screen and (max-width:37.5em) {
+            @content;
+        }
+    };
+    @if ($break==tabport) {
+        @media screen and (max-width:56.25em) {
+            @content;
+        }
+    };
+
+    
+
+    @if ($break==tabland) {
+        @media screen and (max-width:75em) {
+            @content;
+        }
+    };
+    @if ($break==desktop) {
+        @media screen and (min-width:112.5em) {
+            @content;
+        }
+    };
+}

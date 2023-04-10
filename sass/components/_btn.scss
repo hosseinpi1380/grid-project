@@ -1,0 +1,16 @@
+.btn {
+    &:hover {
+        background-color: #8b5f2c;
+        color: white;
+    }
+
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+    border: none;
+    background-color: $color-primary;
+    transition: all .4s;
+
+
+}

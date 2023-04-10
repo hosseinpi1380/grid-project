@@ -1,0 +1,25 @@
+@use "base/mixin" as m;
+@import 'base/base';
+@import 'base/mixin';
+
+@import 'components/realtors';
+@import 'components/navigation';
+@import 'components/btn';
+// @import 'media';
+
+@import 'layout/cardSection';
+@import 'layout/gallery';
+@import 'layout/header';
+@import 'layout/home';
+@import 'layout/hotels-gallery';
+@import 'layout/footer';
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: max-content max-content 80vh repeat(3, max-content);
+    @include m.response(phone){
+        display: flex;
+        flex-direction: column;
+    }
+}

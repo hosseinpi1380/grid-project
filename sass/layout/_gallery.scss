@@ -1,0 +1,58 @@
+.gallery {
+    display: grid;
+    background-image: linear-gradient(to right bottom, rgba($color-black-dark, .8), rgba($color-black-dark-1, .5)), url(/img/back.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-row: 3/4;
+    grid-column: 2/-6;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(6,1fr);
+    overflow: hidden;
+    &-photo {
+        &-1 {
+            width: 100%;
+            grid-row: 2/6;
+            grid-column: 2/6;
+            align-items: center;
+        }
+
+        &-2 {
+            width: 100%;
+            grid-row: 4/7;
+            grid-column: 4/7;
+        }
+    }
+}
+
+.gallery__desc {
+    background-color: #f9f7f6;
+    grid-area: 3/8/4/-1;
+    padding: 6rem 8vh;
+    display: grid;
+    grid-template-rows: repeat(3, min-content) 60px;
+    align-content: space-evenly;
+
+    &>* {
+        margin-bottom: 1rem;
+        font-family: 'Nunito', sans-serif;
+    }
+
+    &-title {
+        text-transform: uppercase;
+        font-size: 1rem;
+    }
+
+    &-decision {
+        text-transform: capitalize;
+        font-weight: 300;
+        font-size: 3rem;
+        font-family: 'Nunito', sans-serif;
+    }
+
+    &-paragraph {
+        font-size: 1.3rem;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 100;
+        color: $color-paragraph;
+    }
+}

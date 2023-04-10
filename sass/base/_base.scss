@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+$color-primary:#c69963;
+$color-black-dark-1:#101d2c;
+$color-black-dark:#1c2838;
+$color-paragraph:#6D5D4B;
+$color-secondary:#f9f7f6;
+
+html {
+    font-size: 62.5%;
+    // font-family: sans-serif;
+}
+
+@include m.response(phone) {
+    html {
+        font-size: 50%;
+    }
+}

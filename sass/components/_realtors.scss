@@ -1,0 +1,40 @@
+.realtors{
+    grid-area: 1/9/2/-1;
+    background-color: $color-black-dark-1;
+    color: $color-primary;
+    text-transform: uppercase;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    &__heading{
+        font-size: 2rem;
+        color: white;
+    }
+}
+.tors-box{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.tor{
+    display: flex;  
+    align-items: center;
+    outline: 1px solid white;
+    outline-offset: 1rem;
+    border-radius: 30px;
+    justify-content: space-around;
+}
+.tor__img{
+    float: left;
+    width: 7rem;
+    border-radius: 50%;
+}
+.tor__detail{
+    margin-left: 1rem;
+}
+.tor__name-desc{
+    color: white;
+}
